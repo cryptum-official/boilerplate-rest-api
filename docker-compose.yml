@@ -3,12 +3,12 @@ version: "3.9"
 services: 
   database:
     image: mysql
-    container_name: cryptum-db
+    container_name: boilerplate-db
     restart: always
     ports:
       - 3306:3306
     environment:
-      - MYSQL_DATABASE=cryptum_backend
+      - MYSQL_DATABASE=boilerplate_backend
       - MYSQL_USER=mysql
       - MYSQL_PASSWORD=mysql
       - MYSQL_ROOT_PASSWORD=123456
@@ -17,7 +17,7 @@ services:
 
   app:
     build: .
-    container_name: cryptum
+    container_name: boilerplate
     restart: always
     ports:
       - 8080:8080
