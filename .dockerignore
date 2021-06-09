@@ -1,0 +1,5 @@
+node_modules
+coverages
+build
+.git
+.vscode

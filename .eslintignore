@@ -1,0 +1,4 @@
+/*.js
+src/app/**/*.ts
+node_modules
+dist
