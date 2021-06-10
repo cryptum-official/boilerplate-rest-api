@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Blockforce REST API boilerplate for new projetcts",
   "main": "./src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blockforce-official/boilerplate-rest-api#license"
+  },
   "scripts": {
     "dev:local": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/index.ts",
     "dev:docker": "ts-node-dev --inspect=0.0.0.0:9229 --transpile-only --ignore-watch node_modules --respawn src/index.ts",
