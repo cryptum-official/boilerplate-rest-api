@@ -1,13 +1,14 @@
 import { CreateUserAction } from '../../../../src/domain/users/actions/CreateUserAction';
 import { AppError } from '../../../../src/infra/errors/AppError';
-import { UsersRepository } from '../../../../src/infra/repositories/users/UsersRepository';
+import { UsersFakeRepository } from '../../../../src/infra/repositories/users/fakes/UsersFakeRepository';
 
 let createUserAction: CreateUserAction;
-let usersFakeRepository: UsersRepository;
+let usersFakeRepository: UsersFakeRepository;
 
 describe('Test suit', () => {
   beforeEach(() => {
-    usersFakeRepository = new UsersRepository();
+    usersFakeRepository = new UsersFakeRepository();
+
     createUserAction = new CreateUserAction(usersFakeRepository);
   });
 
