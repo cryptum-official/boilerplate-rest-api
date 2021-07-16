@@ -1,11 +1,14 @@
-import { app } from './infra/http/server';
-import { db } from './infra/sequelize';
+import 'reflect-metadata';
+import 'dotenv/config';
 
-const { sequelize } = db;
+import { options } from './app/config/typeorm';
+import { app } from './infra/http/server';
+import { Database } from './infra/typeorm/Database';
 
 const startServer = async () => {
   try {
-    await sequelize.authenticate();
+    await Database.getOrCreateConnection(options);
+
     app.listen(8080, () => console.log('Server running!'));
   } catch (err) {
     console.error('Unable to connect to database: ', err);
