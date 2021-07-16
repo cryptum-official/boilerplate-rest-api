@@ -16,7 +16,7 @@ REST API boilerplate for new projetcts. This boilerplate includes:
 - DDD architecture;
 - Tests environment (Jest);
 - Knex to make/run migrations;
-- Sequelize as ORM;
+- TypeORM as ORM;
 - Docker containers (application and mysql database). ***Check out `Dockerfile` and `docker-compose.yml` files***;
 - Codestyle with ESLint and Prettier;
 ## Getting started
@@ -41,7 +41,7 @@ Make a copy of `.env.example`, rename it as `.env` and fill it as bellow:
 Running app with docker:
 ```
 DATABASE_NAME = <your MySQL database>           # replace it without <>
-DATABASE_SEQUELIZE_HOST = database
+DATABASE_TYPEORM_HOST = database
 DATABASE_KNEX_HOST = localhost
 DATABASE_PASSWORD = <your MySQL user password>  # replace it without <>
 DATABASE_USER = <your MySQL user>               # replace it without <>
@@ -53,7 +53,7 @@ Check `docker-compose.yaml` file to match MySQL database, user and password envs
 Running app locally:
 ```
 DATABASE_NAME = <your MySQL database>           # replace it without <>
-DATABASE_SEQUELIZE_HOST = localhost
+DATABASE_TYPEORM_HOST = localhost
 DATABASE_KNEX_HOST = localhost
 DATABASE_PASSWORD = <your MySQL user password>  # replace it without <>
 DATABASE_USER = <your MySQL user>               # replace it without <>
