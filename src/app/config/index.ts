@@ -1,5 +1,5 @@
-import { environments } from './environments';
+import { environments, configObject } from './environments';
 
-const config = environments[process.env.NODE_ENV || 'development'];
+const config: configObject = environments[process.env.NODE_ENV || 'development'];
 
 export { config };
