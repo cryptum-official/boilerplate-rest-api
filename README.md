@@ -100,7 +100,7 @@ After all of this you're good to go and access application at `localhost:8080`
 
 ## Contributing
 
-Feel free to submit issues and PR's to make this boilerplate more and more awesome. To do so, you need will need the following:
+Feel free to submit issues and PR's to make this boilerplate more and more awesome. To do so, you will need the following:
 
 - Fork this project
 - Create a branch for your feature (`git checkout -b feature/amazing-feature`)
